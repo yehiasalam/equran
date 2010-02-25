@@ -1,0 +1,60 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="eQuran.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="FormLocation" Type="System.Drawing.Point" Scope="User">
+      <Value Profile="(Default)">115, 53</Value>
+    </Setting>
+    <Setting Name="FormSize" Type="System.Drawing.Size" Scope="User">
+      <Value Profile="(Default)">1070, 920</Value>
+    </Setting>
+    <Setting Name="pnlaSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)">English Translation By Yusuf Ali</Value>
+    </Setting>
+    <Setting Name="CurrentSoura" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">95</Value>
+    </Setting>
+    <Setting Name="SearchState" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="pnlbSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)">تفسير القــــــرطبي</Value>
+    </Setting>
+    <Setting Name="FontSize" Type="System.String" Scope="User">
+      <Value Profile="(Default)">14</Value>
+    </Setting>
+    <Setting Name="FontName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">ae_AlArabiya</Value>
+    </Setting>
+    <Setting Name="CurrentAya" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+    <Setting Name="ViewMode" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="CurrentScrollValue" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">0</Value>
+    </Setting>
+    <Setting Name="VolumeLevel" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ColorTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">gigi</Value>
+    </Setting>
+    <Setting Name="Identity" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Quran</Value>
+    </Setting>
+    <Setting Name="hadeethSelected" Type="System.String" Scope="User">
+      <Value Profile="(Default)">صحيح البخاري</Value>
+    </Setting>
+    <Setting Name="hadeethSearchHistory" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;string /&gt;
+&lt;/ArrayOfString&gt;</Value>
+    </Setting>
+    <Setting Name="quranReciter" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">1</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
