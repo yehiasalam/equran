@@ -3,7 +3,7 @@ SetCompressor lzma
 !include FontReg.nsh
 !include FontName.nsh
 
-Name "eQruan 3.4"
+Name "eQruan 3.5"
 BrandingText " "
 ShowInstDetails Show
 ShowUninstDetails Show
@@ -35,27 +35,25 @@ Section "Install"
   SetOutPath "$INSTDIR"
   File "..\bin\Release\eQuran.exe"
   File "..\bin\Release\eQuran.exe.config"  
-  File "..\XML Files\extensions.xml"
-  File "..\XML Files\recitations.xml"
   
-  SetOutPath "$INSTDIR\quran"
-  File "..\XML Files\quran\quran.xml"
-  File "..\XML Files\quran\quran_search.xml"
-  File "..\XML Files\quran\quran_parts.xml"
-  File "..\XML Files\quran\tafseer_en_shakir.xml"
-  File "..\XML Files\quran\tafseer_en_ali.xml"
-  File "..\XML Files\quran\tafseer_de.xml"
-  File "..\XML Files\quran\tafseer_it.xml"
-  File "..\XML Files\quran\tafseer_ch.xml"
-  File "..\XML Files\quran\tafseer_fr.xml"
-  
-  SetOutPath "$INSTDIR\hadeeth"
-  File "..\XML Files\hadeeth\hadeeth_bokhary.xml"
-  File "..\XML Files\hadeeth\hadeeth_muslim.xml"
-  File "..\XML Files\hadeeth\sonan_dawood.xml"
-  File "..\XML Files\hadeeth\sonan_elnasaey.xml"
-  File "..\XML Files\hadeeth\sonan_maga.xml"
-  File "..\XML Files\hadeeth\sonan_eltarmazy.xml"
+  SetOutPath "$INSTDIR\data"
+  File "..\data\extensions.xml"
+  File "..\data\recitations.xml" 
+  File "..\data\quran.xml"
+  File "..\data\quran_search.xml"
+  File "..\data\quran_parts.xml"
+  File "..\data\tafseer_en_shakir.xml"
+  File "..\data\tafseer_en_ali.xml"
+  File "..\data\tafseer_de.xml"
+  File "..\data\tafseer_it.xml"
+  File "..\data\tafseer_ch.xml"
+  File "..\data\tafseer_fr.xml"
+  File "..\data\hadeeth_bokhary.xml"
+  File "..\data\hadeeth_muslim.xml"
+  File "..\data\sonan_dawood.xml"
+  File "..\data\sonan_elnasaey.xml"
+  File "..\data\sonan_maga.xml"
+  File "..\data\sonan_eltarmazy.xml"
 
 
   Call InstallFont
@@ -64,11 +62,11 @@ Section "Install"
   ;WriteRegStr HKCU "Software\Extension Changer" "Left" "100"
   WriteRegStr HKLM "${REG_UNINSTALL}" "DisplayName" "eQuran"
   WriteRegStr HKLM "${REG_UNINSTALL}" "DisplayIcon" "$INSTDIR\eQuran.exe"
-  WriteRegStr HKLM "${REG_UNINSTALL}" "DisplayVersion" "3.3"
+  WriteRegStr HKLM "${REG_UNINSTALL}" "DisplayVersion" "3.5"
   WriteRegStr HKLM "${REG_UNINSTALL}" "Publisher" "Yehia A.Salam"
   WriteRegStr HKLM "${REG_UNINSTALL}" "UninstallString" "$INSTDIR\equranuninstall.exe"
-  WriteRegStr HKLM "${REG_UNINSTALL}" "URLInfoAbout" "http://www.seegh.com"
-  WriteRegStr HKLM "${REG_UNINSTALL}" "Contact" "equran@seegh.com"
+  WriteRegStr HKLM "${REG_UNINSTALL}" "URLInfoAbout" "http://www.cairocubicles.com"
+  WriteRegStr HKLM "${REG_UNINSTALL}" "Contact" "equran@cairocubicles.com"
   WriteUninstaller "$INSTDIR\equranuninstall.exe"
   CreateShortCut "$DESKTOP\eQuran.lnk" "$INSTDIR\eQuran.exe"
 SectionEnd
@@ -91,7 +89,7 @@ Function CheckdotNET
 		Quit
 
 	VerifyVersion:
-		IfFileExists "$R0\v2.0.50727\*.*" VersionFound Version2NotFound
+		IfFileExists "$R0\v4.0.30319\*.*" VersionFound Version2NotFound
 
 	Version2NotFound:
 		MessageBox MB_OK|MB_ICONEXCLAMATION "You have an older version of the .NET framework installed on this \r\n computer. You must update it to continue with this installation."
@@ -104,7 +102,7 @@ FunctionEnd
 Function InstallFont 
   StrCpy $FONT_DIR $FONTS
  
-  !insertmacro InstallTTFFont 'ae_AlArabiya.ttf'
+  !insertmacro InstallTTFFont 'amiri-quran.ttf'
   !insertmacro InstallTTFFont 'Haettenschweiler.ttf'
  
   SendMessage ${HWND_BROADCAST} ${WM_FONTCHANGE} 0 0 /TIMEOUT=5000

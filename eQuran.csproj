@@ -131,8 +131,12 @@
     <Content Include="data\extensions.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\hadeeth_bokhary.xml" />
-    <Content Include="data\hadeeth_muslim.xml" />
+    <Content Include="data\hadeeth_bokhary.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\hadeeth_muslim.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="data\quran.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -142,10 +146,18 @@
     <Content Include="data\quran_search.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="data\sonan_dawood.xml" />
-    <Content Include="data\sonan_elnasaey.xml" />
-    <Content Include="data\sonan_eltarmazy.xml" />
-    <Content Include="data\sonan_maga.xml" />
+    <Content Include="data\sonan_dawood.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\sonan_elnasaey.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\sonan_eltarmazy.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="data\sonan_maga.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="data\tafseer_ch.xml">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
