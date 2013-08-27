@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("eQuran")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Seegh.com")]
+[assembly: AssemblyCompany("Cairo Cubicles")]
 [assembly: AssemblyProduct("eQuran")]
-[assembly: AssemblyCopyright("Copyright © 2005-2008 Seegh.com")]
+[assembly: AssemblyCopyright("Copyright © 2005-2013 Cairo Cubicles")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -29,5 +29,5 @@ using System.Runtime.InteropServices;
 //      Build Number
 //      Revision
 //
-[assembly: AssemblyVersion("3.4.79.0")]
-[assembly: AssemblyFileVersion("3.4.79.0")]
+[assembly: AssemblyVersion("3.5.79.0")]
+[assembly: AssemblyFileVersion("3.5.79.0")]

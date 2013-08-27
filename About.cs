@@ -97,17 +97,10 @@ namespace eQuran {
         }
         #endregion
 
-        private void pcbSeegh_MouseEnter(object sender, EventArgs e) {
-            pcbSeegh.Image = eQuran.Properties.Resources.about_dialog_over;
-        }
-
-        private void pcbSeegh_MouseLeave(object sender, EventArgs e) {
-            pcbSeegh.Image = eQuran.Properties.Resources.about_dialog_normal;
-        }
-
         private void pcbSeegh_Click(object sender, EventArgs e) {
-            System.Diagnostics.Process.Start("http://www.seegh.com");
+            System.Diagnostics.Process.Start("http://www.cairocubicles.com");
         }
+
 
 
     }

@@ -63,26 +63,6 @@ namespace eQuran.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap about_dialog_normal {
-            get {
-                object obj = ResourceManager.GetObject("about_dialog_normal", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap about_dialog_over {
-            get {
-                object obj = ResourceManager.GetObject("about_dialog_over", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap border {
             get {
                 object obj = ResourceManager.GetObject("border", resourceCulture);
@@ -117,6 +97,16 @@ namespace eQuran.Properties {
             get {
                 object obj = ResourceManager.GetObject("header_icon", resourceCulture);
                 return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap header_logo {
+            get {
+                object obj = ResourceManager.GetObject("header_logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
         

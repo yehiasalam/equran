@@ -27,18 +27,18 @@ namespace eQuran {
             this.lblname = new System.Windows.Forms.Label();
             this.lblversion = new System.Windows.Forms.Label();
             this.lblcopyright = new System.Windows.Forms.Label();
-            this.pcbSeegh = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSeegh)).BeginInit();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // okButton
@@ -46,7 +46,7 @@ namespace eQuran {
             this.okButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.okButton.BackColor = System.Drawing.SystemColors.Control;
             this.okButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.okButton.Location = new System.Drawing.Point(427, 532);
+            this.okButton.Location = new System.Drawing.Point(597, 532);
             this.okButton.Name = "okButton";
             this.okButton.Size = new System.Drawing.Size(148, 32);
             this.okButton.TabIndex = 30;
@@ -56,18 +56,18 @@ namespace eQuran {
             // lblname
             // 
             this.lblname.AutoSize = true;
-            this.lblname.Font = new System.Drawing.Font("Haettenschweiler", 27.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblname.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(252)))), ((int)(((byte)(77)))), ((int)(((byte)(34)))));
-            this.lblname.Location = new System.Drawing.Point(21, 12);
+            this.lblname.Font = new System.Drawing.Font("Haettenschweiler", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblname.ForeColor = System.Drawing.Color.Black;
+            this.lblname.Location = new System.Drawing.Point(21, 19);
             this.lblname.Name = "lblname";
-            this.lblname.Size = new System.Drawing.Size(125, 50);
+            this.lblname.Size = new System.Drawing.Size(102, 40);
             this.lblname.TabIndex = 32;
             this.lblname.Text = "eQuran";
             // 
             // lblversion
             // 
             this.lblversion.AutoSize = true;
-            this.lblversion.Location = new System.Drawing.Point(147, 41);
+            this.lblversion.Location = new System.Drawing.Point(121, 39);
             this.lblversion.Name = "lblversion";
             this.lblversion.Size = new System.Drawing.Size(52, 17);
             this.lblversion.TabIndex = 33;
@@ -77,27 +77,12 @@ namespace eQuran {
             // 
             this.lblcopyright.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lblcopyright.AutoSize = true;
-            this.lblcopyright.Location = new System.Drawing.Point(35, 539);
+            this.lblcopyright.Location = new System.Drawing.Point(27, 532);
             this.lblcopyright.Name = "lblcopyright";
-            this.lblcopyright.Size = new System.Drawing.Size(122, 17);
+            this.lblcopyright.Size = new System.Drawing.Size(239, 17);
             this.lblcopyright.TabIndex = 35;
-            this.lblcopyright.Text = "Copyright © 2008";
+            this.lblcopyright.Text = "Copyright © 2013 Cairo Cubicles LLC";
             this.lblcopyright.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // pcbSeegh
-            // 
-            this.pcbSeegh.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.pcbSeegh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pcbSeegh.Image = global::eQuran.Properties.Resources.about_dialog_normal;
-            this.pcbSeegh.Location = new System.Drawing.Point(163, 532);
-            this.pcbSeegh.Name = "pcbSeegh";
-            this.pcbSeegh.Size = new System.Drawing.Size(82, 30);
-            this.pcbSeegh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
-            this.pcbSeegh.TabIndex = 37;
-            this.pcbSeegh.TabStop = false;
-            this.pcbSeegh.MouseLeave += new System.EventHandler(this.pcbSeegh_MouseLeave);
-            this.pcbSeegh.Click += new System.EventHandler(this.pcbSeegh_Click);
-            this.pcbSeegh.MouseEnter += new System.EventHandler(this.pcbSeegh_MouseEnter);
             // 
             // tableLayoutPanel1
             // 
@@ -112,7 +97,7 @@ namespace eQuran {
             this.tableLayoutPanel1.Controls.Add(this.label2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.label5, 1, 3);
             this.tableLayoutPanel1.Controls.Add(this.label6, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(21, 77);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(198, 85);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.74336F));
@@ -123,12 +108,34 @@ namespace eQuran {
             this.tableLayoutPanel1.Size = new System.Drawing.Size(527, 432);
             this.tableLayoutPanel1.TabIndex = 39;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(156, 232);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(367, 68);
+            this.label8.TabIndex = 47;
+            this.label8.Text = "Anyone could help expand eQuran. There is always room for more Reciters,  Transla" +
+    "tions, and Commentaries. If you are willing to contribute, just drop us an email" +
+    " at equran@cairocubicles.com";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label7.Location = new System.Drawing.Point(3, 338);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 34);
+            this.label7.TabIndex = 46;
+            this.label7.Text = "report";
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(156, 76);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(365, 119);
+            this.label3.Size = new System.Drawing.Size(368, 119);
             this.label3.TabIndex = 40;
             this.label3.Text = resources.GetString("label3.Text");
             // 
@@ -170,7 +177,7 @@ namespace eQuran {
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(156, 338);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(368, 34);
+            this.label5.Size = new System.Drawing.Size(367, 34);
             this.label5.TabIndex = 44;
             this.label5.Text = "The Arabic Quran text was not revised so be sure to report any typos.\r\n";
             // 
@@ -179,41 +186,29 @@ namespace eQuran {
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(156, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(367, 51);
+            this.label6.Size = new System.Drawing.Size(365, 51);
             this.label6.TabIndex = 45;
             this.label6.Text = "eQuran is freely distributed, you may not use this work for commercial purposes. " +
-                "You may not alter, transform, or build upon this work.";
+    "You may not alter, transform, or build upon this work.";
             // 
-            // label7
+            // pictureBox1
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(3, 338);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(89, 34);
-            this.label7.TabIndex = 46;
-            this.label7.Text = "report";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(156, 232);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(368, 68);
-            this.label8.TabIndex = 47;
-            this.label8.Text = "Anyone could help expand eQuran. There is always room for more Reciters,  Transla" +
-                "tions, and Commentaries. If you are willing to contribute, just drop us an email" +
-                " at equran@seegh.com";
+            this.pictureBox1.Image = global::eQuran.Properties.Resources.header_logo;
+            this.pictureBox1.Location = new System.Drawing.Point(28, 85);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(160, 100);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox1.TabIndex = 40;
+            this.pictureBox1.TabStop = false;
             // 
             // frmAbout
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(587, 576);
+            this.ClientSize = new System.Drawing.Size(757, 576);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.Controls.Add(this.pcbSeegh);
             this.Controls.Add(this.lblcopyright);
             this.Controls.Add(this.lblversion);
             this.Controls.Add(this.lblname);
@@ -228,9 +223,9 @@ namespace eQuran {
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "About";
-            ((System.ComponentModel.ISupportInitialize)(this.pcbSeegh)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,7 +237,6 @@ namespace eQuran {
         private System.Windows.Forms.Label lblname;
         private System.Windows.Forms.Label lblversion;
         private System.Windows.Forms.Label lblcopyright;
-        private System.Windows.Forms.PictureBox pcbSeegh;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -252,5 +246,6 @@ namespace eQuran {
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
