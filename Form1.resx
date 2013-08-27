@@ -112,34 +112,34 @@
     <value>2.0</value>
   </resheader>
   <resheader name="reader">
-    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <resheader name="writer">
-    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="mextension.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="mextension.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>121, 8</value>
   </metadata>
-  <metadata name="clrPainter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="clrPainter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>229, 8</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cmdsearch.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        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
+        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
 </value>
   </data>
   <data name="chkExpanded.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -158,7 +158,7 @@
         iGDgeEDQaDAAAA==
 </value>
   </data>
-  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>47</value>
   </metadata>
 </root>

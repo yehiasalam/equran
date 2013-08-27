@@ -52,10 +52,10 @@ namespace eQuran
             this.cmdsearch = new System.Windows.Forms.Button();
             this.txtsearch = new System.Windows.Forms.TextBox();
             this.lstsearch = new System.Windows.Forms.ListView();
-            this.chSouraID = new System.Windows.Forms.ColumnHeader();
-            this.chSouraName = new System.Windows.Forms.ColumnHeader();
-            this.chAyaID = new System.Windows.Forms.ColumnHeader();
-            this.chAyaText = new System.Windows.Forms.ColumnHeader();
+            this.chSouraID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chSouraName = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAyaID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.chAyaText = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.bExpand = new System.Windows.Forms.ToolStripButton();
             this.pnlQuranTools = new System.Windows.Forms.FlowLayoutPanel();
             this.chkSearch = new System.Windows.Forms.CheckBox();
@@ -82,19 +82,23 @@ namespace eQuran
             this.pnlStatus = new eQuran.PanelBase();
             this.lblabout = new System.Windows.Forms.Label();
             this.lblstatus = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.spcQuran)).BeginInit();
             this.spcQuran.Panel1.SuspendLayout();
             this.spcQuran.Panel2.SuspendLayout();
             this.spcQuran.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cntleft)).BeginInit();
             this.cntleft.Panel1.SuspendLayout();
             this.cntleft.Panel2.SuspendLayout();
             this.cntleft.SuspendLayout();
             this.pnla.SuspendLayout();
             this.pnlb.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cntright)).BeginInit();
             this.cntright.Panel1.SuspendLayout();
             this.cntright.Panel2.SuspendLayout();
             this.cntright.SuspendLayout();
             this.panelBase1.SuspendLayout();
             this.pnlQuranTools.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.spcHadeeth)).BeginInit();
             this.spcHadeeth.Panel1.SuspendLayout();
             this.spcHadeeth.Panel2.SuspendLayout();
             this.spcHadeeth.SuspendLayout();
@@ -111,9 +115,9 @@ namespace eQuran
             // 
             // spcQuran
             // 
-            this.spcQuran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.spcQuran.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.spcQuran.Location = new System.Drawing.Point(0, 87);
             this.spcQuran.Name = "spcQuran";
             // 
@@ -148,9 +152,9 @@ namespace eQuran
             // 
             // pnla
             // 
-            this.pnla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnla.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnla.ColorPainter = this.clrPainter;
             this.pnla.Controls.Add(this.txtpnla);
             this.pnla.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -163,9 +167,9 @@ namespace eQuran
             this.pnla.Size = new System.Drawing.Size(301, 180);
             this.pnla.TabIndex = 17;
             this.pnla.UseHeaderColor = false;
+            this.pnla.MoveLeft += new eQuran.PanelEx.MoveLeftEvent(this.pnl_MoveLeft);
             this.pnla.MoveRight += new eQuran.PanelEx.MoveRightEvent(this.pnl_MoveRight);
             this.pnla.MoveDown += new eQuran.PanelEx.MoveDownEvent(this.pnl_MoveDown);
-            this.pnla.MoveLeft += new eQuran.PanelEx.MoveLeftEvent(this.pnl_MoveLeft);
             // 
             // clrPainter
             // 
@@ -189,9 +193,9 @@ namespace eQuran
             // 
             // pnlb
             // 
-            this.pnlb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlb.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnlb.ColorPainter = this.clrPainter;
             this.pnlb.Controls.Add(this.txtpnlb);
             this.pnlb.Font = new System.Drawing.Font("Tahoma", 10F);
@@ -204,9 +208,9 @@ namespace eQuran
             this.pnlb.Size = new System.Drawing.Size(300, 184);
             this.pnlb.TabIndex = 0;
             this.pnlb.UseHeaderColor = false;
+            this.pnlb.MoveLeft += new eQuran.PanelEx.MoveLeftEvent(this.pnl_MoveLeft);
             this.pnlb.MoveRight += new eQuran.PanelEx.MoveRightEvent(this.pnl_MoveRight);
             this.pnlb.MoveDown += new eQuran.PanelEx.MoveDownEvent(this.pnl_MoveDown);
-            this.pnlb.MoveLeft += new eQuran.PanelEx.MoveLeftEvent(this.pnl_MoveLeft);
             // 
             // txtpnlb
             // 
@@ -350,9 +354,9 @@ namespace eQuran
             // 
             // qv
             // 
-            this.qv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.qv.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.qv.BackColor = System.Drawing.Color.White;
             this.qv.Font = new System.Drawing.Font("Arial", 16F);
             this.qv.Location = new System.Drawing.Point(3, 9);
@@ -365,9 +369,9 @@ namespace eQuran
             this.qv.TabIndex = 0;
             this.qv.Text = "qViewer1";
             this.qv.ViewMode = eQuran.qViewer.ViewModeFlags.SingleLine;
-            this.qv.AyaSoundClick += new eQuran.qViewer.AyaClickEvent(this.qv_AyaSoundClick);
-            this.qv.SouraSoundClick += new eQuran.qViewer.SouraClickEvent(this.qv_SouraSoundClick);
             this.qv.ItemClick += new eQuran.qViewer.ItemClickEvent(this.qv_ItemClick);
+            this.qv.SouraSoundClick += new eQuran.qViewer.SouraClickEvent(this.qv_SouraSoundClick);
+            this.qv.AyaSoundClick += new eQuran.qViewer.AyaClickEvent(this.qv_AyaSoundClick);
             // 
             // lblresultcount
             // 
@@ -375,7 +379,7 @@ namespace eQuran
             this.lblresultcount.AutoSize = true;
             this.lblresultcount.Location = new System.Drawing.Point(12, 111);
             this.lblresultcount.Name = "lblresultcount";
-            this.lblresultcount.Size = new System.Drawing.Size(145, 17);
+            this.lblresultcount.Size = new System.Drawing.Size(142, 17);
             this.lblresultcount.TabIndex = 21;
             this.lblresultcount.Text = "0 occurrence(s) found";
             // 
@@ -393,8 +397,8 @@ namespace eQuran
             // 
             // txtsearch
             // 
-            this.txtsearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.txtsearch.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txtsearch.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.txtsearch.Location = new System.Drawing.Point(104, 5);
             this.txtsearch.Name = "txtsearch";
@@ -404,9 +408,9 @@ namespace eQuran
             // 
             // lstsearch
             // 
-            this.lstsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.lstsearch.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.lstsearch.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.chSouraID,
             this.chSouraName,
@@ -423,8 +427,8 @@ namespace eQuran
             this.lstsearch.TabIndex = 18;
             this.lstsearch.UseCompatibleStateImageBehavior = false;
             this.lstsearch.View = System.Windows.Forms.View.Details;
-            this.lstsearch.Resize += new System.EventHandler(this.lstsearch_Resize);
             this.lstsearch.DoubleClick += new System.EventHandler(this.lstsearch_DoubleClick);
+            this.lstsearch.Resize += new System.EventHandler(this.lstsearch_Resize);
             // 
             // chSouraID
             // 
@@ -619,9 +623,9 @@ namespace eQuran
             // 
             // hdtViewer
             // 
-            this.hdtViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.hdtViewer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.hdtViewer.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.hdtViewer.Location = new System.Drawing.Point(25, 18);
             this.hdtViewer.Name = "hdtViewer";
@@ -632,9 +636,9 @@ namespace eQuran
             // 
             // trvHadeeth
             // 
-            this.trvHadeeth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.trvHadeeth.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.trvHadeeth.DrawMode = System.Windows.Forms.TreeViewDrawMode.OwnerDrawAll;
             this.trvHadeeth.Font = new System.Drawing.Font("ae_AlArabiya", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(178)));
             this.trvHadeeth.Location = new System.Drawing.Point(12, 51);
@@ -821,13 +825,15 @@ namespace eQuran
             this.Location = new System.Drawing.Point(200, 200);
             this.Name = "Form1";
             this.Text = "eQuran";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form1_FormClosing);
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.spcQuran.Panel1.ResumeLayout(false);
             this.spcQuran.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.spcQuran)).EndInit();
             this.spcQuran.ResumeLayout(false);
             this.cntleft.Panel1.ResumeLayout(false);
             this.cntleft.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.cntleft)).EndInit();
             this.cntleft.ResumeLayout(false);
             this.pnla.ResumeLayout(false);
             this.pnla.PerformLayout();
@@ -836,12 +842,14 @@ namespace eQuran
             this.cntright.Panel1.ResumeLayout(false);
             this.cntright.Panel2.ResumeLayout(false);
             this.cntright.Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.cntright)).EndInit();
             this.cntright.ResumeLayout(false);
             this.panelBase1.ResumeLayout(false);
             this.panelBase1.PerformLayout();
             this.pnlQuranTools.ResumeLayout(false);
             this.spcHadeeth.Panel1.ResumeLayout(false);
             this.spcHadeeth.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.spcHadeeth)).EndInit();
             this.spcHadeeth.ResumeLayout(false);
             this.pnlHadeethTools.ResumeLayout(false);
             this.pnlcolors.ResumeLayout(false);
