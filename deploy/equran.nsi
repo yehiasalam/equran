@@ -103,6 +103,7 @@ Function InstallFont
   StrCpy $FONT_DIR $FONTS
  
   !insertmacro InstallTTFFont 'amiri-quran.ttf'
+  !insertmacro InstallTTFFont 'ae_AlArabiya.ttf'
   !insertmacro InstallTTFFont 'Haettenschweiler.ttf'
  
   SendMessage ${HWND_BROADCAST} ${WM_FONTCHANGE} 0 0 /TIMEOUT=5000
